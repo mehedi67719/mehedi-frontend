@@ -1,80 +1,80 @@
 import React from 'react';
 import { BsPlusCircleFill } from 'react-icons/bs';
-import { HiBadgeCheck } from 'react-icons/hi'; // এটি ইমপোর্ট করতে হবে
+import { HiBadgeCheck } from 'react-icons/hi';
 
 const FeatureItem = ({ text }) => (
     <div className="flex items-start gap-4">
-        <div className="mt-1 bg-gray-800 p-0.5 rounded-full flex items-center justify-center">
-            <HiBadgeCheck className="text-gray-200 text-lg" />
+        <div className="mt-1 flex items-center justify-center">
+            <HiBadgeCheck className="text-white text-xl" />
         </div>
-        <p className="text-gray-300 text-sm md:text-base leading-tight">{text}</p>
+        <p className="text-white text-sm md:text-base leading-snug">{text}</p>
     </div>
 );
 
 const CTASection = () => {
     return (
-        <div className=" flex items-center justify-center">
-            <div className=" w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+        <section className="py-20">
+            <div className="max-w-[95%] mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
 
-             
-                <div className="bg-[#111214] rounded-3xl p-10 flex flex-col justify-center">
-                    <div className="inline-flex items-center gap-2 bg-[#1a1a1a] border border-blue-500/30 px-3 py-1 rounded-full w-fit mb-6 shadow-[0_0_15px_rgba(59,130,246,0.2)]">
-                        <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
-                        <span className="text-xs font-medium text-gray-300">Introducing</span>
+                    <div className="bg-[#0D0D0F] rounded-[40px] p-8 md:p-14 flex flex-col justify-center border border-white/5">
+                        <div className="inline-flex items-center gap-2 bg-[#1A1B1E] border px-4 py-1.5 rounded-full w-fit mb-8">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse shadow-[0_0_8px_#3b82f6]"></span>
+                            <span className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-white">Introducing</span>
+                        </div>
+
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight tracking-tight text-white">
+                            The Deep Work <br /> Blueprint
+                        </h2>
+                        
+                        <p className="mb-10 text-lg md:text-xl font-medium text-white">
+                            What extra you will get if you enroll now
+                        </p>
+
+                        <div className="space-y-5">
+                            <div className="flex items-center gap-4 group">
+                                <BsPlusCircleFill className="text-white text-2xl group-hover:scale-110 transition-transform" />
+                                <p className="font-medium md:text-lg text-white">Bonus: 1:1 coaching session to boost focus.</p>
+                            </div>
+                            <div className="flex items-center gap-4 group">
+                                <BsPlusCircleFill className="text-white text-2xl group-hover:scale-110 transition-transform" />
+                                <p className="font-medium md:text-lg text-white">Discount: Save 30% when you enroll now!</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
-                        The Deep Work Blueprint
-                    </h1>
-                    <p className="text-gray-400 mb-8 text-lg">
-                        What extra you will get if you enroll now
-                    </p>
+                    <div className="bg-[#0D0D0F] border border-white/5 rounded-[40px] p-8 md:p-14 flex flex-col relative overflow-hidden shadow-2xl">
+                        <div className="absolute -top-20 -right-20 w-64 h-64 bg-blue-600/10 blur-[120px] rounded-full"></div>
 
-                    <div className="space-y-4">
-                        <div className="flex items-center gap-3 group">
-                            <BsPlusCircleFill className="text-blue-500 text-xl group-hover:scale-110 transition-transform" />
-                            <p className="text-gray-300">Bonus: 1:1 coaching session to boost focus.</p>
+                        <div className="flex items-center justify-between mb-4">
+                            <div className="flex items-baseline gap-4">
+                                <span className="text-5xl md:text-6xl font-bold tracking-tighter text-white">$349</span>
+                                <span className="text-2xl md:text-3xl line-through decoration-red-500/80 decoration-2 font-medium text-white">$500</span>
+                            </div>
+                            <div className="bg-blue-600 text-white text-xs font-bold px-3 py-1.5 rounded-lg uppercase tracking-wider">
+                                30% off
+                            </div>
                         </div>
-                        <div className="flex items-center gap-3 group">
-                            <BsPlusCircleFill className="text-blue-500 text-xl group-hover:scale-110 transition-transform" />
-                            <p className="text-gray-300">Discount: Save 30% when you enroll now!</p>
+
+                        <p className="text-sm md:text-base font-medium mb-12 text-white">
+                            30% off until 4d : 2h : 41m : 17s
+                        </p>
+
+                        <div className="space-y-7 mb-14 flex-grow">
+                            <FeatureItem text="6h of videos - Step-by-step deep work strategies." />
+                            <FeatureItem text="Templates & Trackers - Stay on track effortlessly." />
+                            <FeatureItem text="Live Q&As - Expert guidance & accountability." />
+                            <FeatureItem text="Exclusive Community - Connect with others." />
                         </div>
+
+                        <button className="w-full bg-blue-600 hover:bg-blue-700 active:scale-[0.98] transition-all text-white font-bold py-5 rounded-2xl text-lg md:text-xl shadow-[0_8px_30px_rgb(37,99,235,0.2)]">
+                            Enroll now
+                        </button>
                     </div>
+
                 </div>
-
-            
-                <div className="bg-[#0f0f0f] border border-gray-800 rounded-3xl p-10 flex flex-col relative overflow-hidden">
-                 
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600/10 blur-[80px]"></div>
-
-                    <div className="flex items-baseline justify-between mb-2">
-                        <div className="flex items-baseline gap-3">
-                            <span className="text-5xl font-bold">$349</span>
-                            <span className="text-2xl text-gray-500 line-through decoration-red-500">$500</span>
-                        </div>
-                        <span className="bg-blue-600 text-xs font-bold px-3 py-1.5 rounded-lg shadow-lg">
-                            30% off
-                        </span>
-                    </div>
-
-                    <p className="text-gray-400 text-sm mb-10">
-                        30% off until 4d : 2h : 41m : 17s
-                    </p>
-
-                    <div className="space-y-6 mb-12 flex-grow">
-                        <FeatureItem text="6h of videos - Step-by-step deep work strategies." />
-                        <FeatureItem text="Templates & Trackers - Stay on track effortlessly." />
-                        <FeatureItem text="Live Q&As - Expert guidance & accountability." />
-                        <FeatureItem text="Exclusive Community - Connect with others." />
-                    </div>
-
-                    <button className="w-full bg-blue-600 hover:bg-blue-700 transition-colors text-white font-bold py-4 rounded-xl text-lg shadow-[0_4px_20px_rgba(37,99,235,0.3)]">
-                        Enroll now
-                    </button>
-                </div>
-
             </div>
-        </div>
+        </section>
     );
 };
 

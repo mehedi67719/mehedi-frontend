@@ -1,134 +1,79 @@
 import React from 'react';
-import { BiSolidBrain } from 'react-icons/bi';
-import { HiLightBulb, HiOutlineLightBulb } from 'react-icons/hi';
+import { FaBrain } from 'react-icons/fa';
+import { HiLightBulb } from 'react-icons/hi';
 import { MdVerified } from 'react-icons/md';
-import { TbRoute } from 'react-icons/tb';
+import { TbRouteSquare } from 'react-icons/tb';
 
 const Benifits = () => {
+    const steps = [
+        {
+            icon: <HiLightBulb className="w-5 h-5 text-white" />,
+            title: "Develop laser-sharp focus & eliminate distractions.",
+        },
+        {
+            icon: <FaBrain className="w-5 h-5 text-white" />,
+            title: "Master deep work techniques for smarter productivity.",
+        },
+        {
+            icon: <MdVerified className="w-5 h-5 text-white" />,
+            title: "Overcome procrastination & get more done.",
+        },
+        {
+            icon: <TbRouteSquare className="w-5 h-5 text-white" />,
+            title: "Build lasting habits for long-term success.",
+        },
+    ];
+
     return (
-        <div>
+        <section className="py-20 w-full max-w-[95%] mx-auto overflow-hidden">
+            <div className="px-4 sm:px-10">
 
-
-            <div className='max-w-[800px] mx-auto my-60 '>
-
-
-                <div className='text-center mb-40'>
-                    <p className="inline-flex  items-center gap-2 mb-6 px-4 py-2 rounded-full bg-gradient-to-r from-blue-950 to-blue-900 border border-blue-600/50 text-blue-200 text-sm font-medium">
-                        <span className="inline-block w-2 h-2 rounded-full bg-blue-400"></span>
+                <div className="flex flex-col items-center text-center mb-16">
+                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0f172a] border border-blue-500/20 text-blue-400 text-xs font-medium mb-6">
+                        <span className="w-2 h-2 rounded-full bg-blue-500"></span>
                         The Deep Work Blueprint
-                    </p>
-                    <h2 className='text-5xl'>A self-paced, results-driven course designed to help you</h2>
+                    </span>
+                    <h2 className="text-2xl md:text-4xl font-bold leading-tight max-w-2xl">
+                        A self-paced, results-driven course designed to help you
+                    </h2>
                 </div>
 
+                <div className="max-w-md mx-auto relative">
 
+                    
+                    <div className="absolute left-[14px] top-0 bottom-0 w-[2px]">
+                        <div className="w-full h-full bg-gradient-to-r from-transparent via-blue-800 to-transparent"></div>
+                    
 
-
-                <div className="max-w-[380px] mx-auto">
-
-                    <div className='flex items-center gap-8'>
-                        <div className='flex flex-col items-center justify-center '>
-                            <div className='w-4 h-4 rounded-full bg-blue-500 shadow-lg shadow-blue-500/50'></div>
-                            <div className='w-1 h-48 bg-gradient-to-b from-via-blue-200 via-blue-600 to-via-blue-200'></div>
-                        </div>
-
-
-
-                        <div className="max-w-[300px] flex flex-col gap-4">
-                            <div className="w-10 h-10 flex items-center justify-center rounded-full 
-                    bg-gray-200 dark:bg-[#171B21] 
-                    text-gray-700 dark:text-white">
-                                <HiLightBulb className="text-xl" />
-                            </div>
-                            <p >
-                                Develop laser-sharp focus & eliminate distractions.
-                            </p>
-                        </div>
+                   
                     </div>
 
+                    <div className="flex flex-col gap-16">
+                        {steps.map((step, index) => (
+                            <div key={index} className="relative flex items-start">
 
+                                
+                                <div className="absolute left-[6px] top-0">
+                                    <div className="w-6 h-6 rounded-full bg-blue-600 shadow-[0_0_25px_rgba(59,130,246,1)]"></div>
+                                </div>
 
+                                <div className="ml-14 flex flex-col">
 
+                                    <div className="w-12 h-12 rounded-full bg-[#0d1117] border border-white/10 flex items-center justify-center mb-4">
+                                        {step.icon}
+                                    </div>
 
-                    <div className='flex items-center gap-8'>
+                                    <p className="text-sm text-gray-400 leading-relaxed max-w-xs">
+                                        {step.title}
+                                    </p>
+                                </div>
 
-
-                        <div className='flex flex-col items-center justify-center '>
-                            <div className='w-4 h-4 rounded-full bg-blue-500 shadow-lg shadow-blue-500/50'></div>
-                            <div className='w-1 h-48 bg-gradient-to-b from-via-blue-200 via-blue-600 to-via-blue-200'></div>
-                        </div>
-
-
-                        <div className="max-w-[300px] flex flex-col gap-3">
-                            <div className="w-10 h-10 flex items-center justify-center rounded-full 
-                    bg-gray-200 dark:bg-[#171B21] 
-                    text-gray-700 dark:text-white">
-                                <BiSolidBrain className="text-xl" />
                             </div>
-                            <p >
-                               Overcome procrastination & get more done.
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-                    <div className='flex items-center gap-8'>
-
-
-
-                        <div className='flex flex-col items-center justify-center '>
-                            <div className='w-4 h-4 rounded-full bg-blue-500 shadow-lg shadow-blue-500/50'></div>
-                            <div className='w-1 h-48 bg-gradient-to-b from-via-blue-200 via-blue-600 to-via-blue-200'></div>
-                        </div>
-
-
-                        <div className="max-w-[300px] flex flex-col gap-3">
-                            <div className="w-10 h-10 flex items-center justify-center rounded-full 
-                    bg-gray-200 dark:bg-[#171B21] 
-                    text-gray-700 dark:text-white">
-                                <MdVerified className="text-xl" />
-                            </div>
-                            <p >
-                                Develop laser-sharp focus & eliminate distractions.
-                            </p>
-                        </div>
-
-                    </div>
-
-
-
-                    <div className='flex items-center gap-8' >
-                        <div className='flex flex-col items-center justify-center '>
-                            <div className='w-4 h-4 rounded-full bg-blue-500 shadow-lg shadow-blue-500/50'></div>
-                            <div className='w-1 h-48 bg-gradient-to-b from-via-blue-200 via-blue-600 to-via-blue-200'></div>
-                        </div>
-
-
-
-                        <div className="max-w-[300px] flex flex-col gap-3">
-                            <div className="w-10 h-10 flex items-center justify-center rounded-full 
-                    bg-gray-200 dark:bg-[#171B21] 
-                    text-gray-700 dark:text-white">
-                                <TbRoute className="text-xl" />
-                            </div>
-                            <p className="">
-                                Build lasting habits for long-term success.
-                            </p>
-                        </div>
-
-
+                        ))}
                     </div>
                 </div>
-
-
-
-
             </div>
-
-
-
-        </div>
+        </section>
     );
 };
 

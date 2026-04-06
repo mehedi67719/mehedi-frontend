@@ -4,8 +4,8 @@ import React from 'react';
 const Footer = () => {
     return (
         <div className='relative '>
-            <div className="absolute max-w-[60%] mx-auto top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-to-via-blue-300   blue-[#2466F2] via-blue-300 to-transparent"></div>
-            <div className='max-w-[60%] mx-auto flex items-center pt-8 pb-15 justify-between'>
+            <div className="absolute max-w-[95%] mx-auto top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-to-via-blue-300   blue-[#2466F2] via-blue-300 to-transparent"></div>
+            <div className='max-w-[95%] mx-auto flex items-center pt-8 pb-15 justify-between'>
                 <p>© Copyright 2024, All Rights Reserved</p>
                 <div className='flex items-center'>
                     <Link href="/">Terms & conditions</Link>

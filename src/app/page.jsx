@@ -1,4 +1,5 @@
 "use client"
+
 import Benifits from "@/Components/Benifits";
 import CTASection from "@/Components/CTASection";
 import Curriculumresult from "@/Components/Curriculumresult";
@@ -12,11 +13,11 @@ import Videocontent from "@/Components/Videocontent";
 export default function Home() {
 
   return (
-    <div className="min-h-screen max-w-[60%] mx-auto">
+    <div className="min-h-screen">
       <HeroContent />
       <Videocontent />
       <PinPointsection />
-      <Benifits />
+      <Benifits/>
       <DeepWorkCurriculum />
       <Curriculumresult/>
       <CTASection/>
