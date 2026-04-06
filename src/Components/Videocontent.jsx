@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Videocontent = () => {
     return (
-        <div className="overflow-hidden my-16 mx-4 md:mx-8 lg:mx-16">
+        <div className="overflow-hidden my-16">
             <Image
                 src="/video image.png"
                 alt="Video"
