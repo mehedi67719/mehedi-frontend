@@ -24,9 +24,9 @@ const Navbar = () => {
     return (
         <div className="relative">
           
-            <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-to-via-blue-300   blue-[#2466F2] via-blue-300 to-transparent"></div>
+            <div className="absolute  max-w-[60%] mx-auto -bottom-2 left-0 right-0 h-[1px] bg-gradient-to-r from-to-via-blue-300   blue-[#2466F2] via-blue-300 to-transparent"></div>
             
-            <div className="mx-10 my-6 flex justify-between items-center">
+            <div className="max-w-[60%] mx-auto flex justify-between items-center">
 
                 <div className="flex items-center gap-2">
                     <Image src='/logo.svg' alt="Logo" width={30} height={31} />

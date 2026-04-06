@@ -20,18 +20,18 @@ const DeepWorkCurriculum = () => {
 
   return (
     <div className="">
-      {/* Header Section */}
-      <div className="max-w-6xl mx-auto text-center mb-16">
+     
+      <div className="max-w-6xl mx-auto text-center mb-20">
         <span className="bg-[#0f172a] text-white text-xs font-semibold px-4 py-1.5 rounded-full inline-flex items-center gap-2 mb-4">
           <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
           Course Curriculum
         </span>
-        <h1 className="text-4xl md:text-5xl font-bold text-slate-300 leading-tight">
+        <h1 className="text-4xl md:text-5xl font-bold leading-tight text-base-content">
           Mastering Deep Work: A Structured <br /> Path to Peak Productivity
         </h1>
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 mt-24 items-start">
         
         {/* Curriculum List */}
         <div className="lg:col-span-7 space-y-8">
@@ -81,7 +81,7 @@ const DeepWorkCurriculum = () => {
               ))}
             </div>
 
-            <button className="w-full bg-[#2563eb] hover:bg-blue-700 text-white font-semibold py-4 rounded-xl transition-all active:scale-95 shadow-lg shadow-blue-500/20">
+            <button className="btn-primary w-full">
               Enroll now
             </button>
           </div>
