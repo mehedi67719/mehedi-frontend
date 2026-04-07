@@ -14,14 +14,25 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <HeroContent />
-      <Videocontent />
-      <PinPointsection />
-      <Benifits/>
-      <DeepWorkCurriculum />
-      <Curriculumresult/>
-      <CTASection/>
-      <Footercontent/>
+      <div id="overview">
+        <HeroContent />
+        <Videocontent />
+        <PinPointsection />
+        <Benifits />
+      </div>
+      <div id="curriculum">
+        <DeepWorkCurriculum />
+      </div>
+
+      <div id="testimonials">
+        <Curriculumresult />
+      </div>
+
+
+      <div id="pricing">
+        <CTASection />
+      </div>
+      <Footercontent />
     </div>
   );
 }
